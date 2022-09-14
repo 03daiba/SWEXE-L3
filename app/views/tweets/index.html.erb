@@ -1,5 +1,5 @@
 <% @tweets.each do |tweet| %>
-    <br><%= tweet.message %>
+    <br><a><%= tweet.message %></a>
     <%= (((Time.current) - (tweet.tdate)).div(60)) %>
     <%= '分前の投稿' %></br>
 <% end %>
