@@ -1,6 +1,6 @@
 <% @tweets.each do |tweet| %>
-    <br><a><%= tweet.message %></a>
+    <br><a><%= tweet.message %>
     <%= (((Time.current) - (tweet.tdate)).div(60)) %>
-    <%= '分前の投稿' %></br>
+    <%= '分前の投稿' %></a></br>
 <% end %>
 <p><%= link_to '新規追加', '/tweets/new' %></p>
