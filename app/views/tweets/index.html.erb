@@ -1,6 +1,14 @@
 <% @tweets.each do |tweet| %>
-    <br><p><%= tweet.message %></p>
-    <%= (((Time.current) - (tweet.tdate)).div(60)) %>
-    <%= '分前の投稿' %></br>
+    <br>
+        <p>
+            <%= tweet.message %>
+        </p>
+        <p>
+            <%= (((Time.current) - (tweet.tdate)).div(60)) %>
+            <%= '分前の投稿' %>
+        </p>
+        <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
+    </br>
+    
 <% end %>
 <p><%= link_to '新規追加', '/tweets/new' %></p>
