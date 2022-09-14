@@ -2,6 +2,6 @@
     <%= f.label :message, '内容' %>
     <%= f.text_field :message %>
     
-    <%=  f.datetime_field :tdate, value: Time.now %>
+    <%=  f.datetime_field :tdate, value: Time.current %>
     <%= f.submit '登録' %>
 <% end %>
