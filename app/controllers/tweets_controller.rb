@@ -33,6 +33,7 @@ class TweetsController < ApplicationController
   
   def update
     tweet = Tweet.find(params[:id])
+    
     tweet.update(message: params[:tweet][:message])
     redirect_to '/'
   end
