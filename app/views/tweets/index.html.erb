@@ -3,10 +3,8 @@
         <p>
             <%= tweet.message %>
         </p>
-        <p>
             <%= (((Time.current) - (tweet.tdate)).div(60)) %>
             <%= '分前の投稿' %>
-        </p>
         <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
     </br>
     
