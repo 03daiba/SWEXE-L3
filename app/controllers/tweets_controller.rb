@@ -8,10 +8,13 @@ class TweetsController < ApplicationController
   end
   
   def create
-    tweet = Tweet.new(message: params[:tweet][:message], tdate: Time.current
+    @tweet = Tweet.new(message: params[:tweet][:message], tdate: Time.current
 )
-    tweet.save
-    redirect_to '/'
+    if @tweet.save
+      redirect_to '/'
+    else
+      render 'new'
+    end
   end
   
   def destroy
