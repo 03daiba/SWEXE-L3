@@ -1,6 +1,6 @@
 <%= form_for @tweet , url: {action: :create} do |f| %>
     <%= f.label :message, '内容' %>
     <%= f.text_field :message %>
-    <%= f.datetime_filed :tdate %>
+    <%= f.datetime_field :tdate %>
     <%= f.submit '登録' %>
 <% end %>
