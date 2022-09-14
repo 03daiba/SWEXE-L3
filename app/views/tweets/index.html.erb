@@ -1,4 +1,5 @@
 <% @tweets.each do |tweet| %>
-    <p><a href=' <% tweet.message %> '><%= tweet.tdate %></a></p>
+    <%= tweets.message %>
+    <%= tweets.tdate %>
 <% end %>
 <p><%= link_to '新規追加', '/tweets/new' %></p>
