@@ -1,5 +1,5 @@
 #header{
-    width: 720px;
-    float: left;
+      box-sizing: border-box;
+      border: 8px solid blue;
     background-color: lightcyan;
 }
