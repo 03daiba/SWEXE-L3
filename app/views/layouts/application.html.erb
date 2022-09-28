@@ -15,11 +15,13 @@
       <div id="header">
         <%= render "header" %>
       </div>
-      <div id="sidebar">
-        <%= render "sidebar" %>
-      </div>
-      <div id="content">
-        <%= yield %>
+      <div id = "main">
+        <div id="sidebar">
+          <%= render "sidebar" %>
+        </div>
+        <div id="content">
+          <%= yield %>
+        </div>
       </div>
       <div id="footer">
         <%= render "footer" %>
