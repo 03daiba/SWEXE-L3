@@ -14,7 +14,7 @@ class TweetsController < ApplicationController
     if @tweet.save
       redirect_to root_path
     else
-      render new_tweet_path
+      render tweets_new_path
     end
   end
   
