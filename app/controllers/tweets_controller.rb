@@ -12,9 +12,9 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new(message: params[:tweet][:message], tdate: Time.current
 )
     if @tweet.save
-      redirect_to '/'
+      redirect_to root_path
     else
-      render 'new'
+      render new_path
     end
   end
   
