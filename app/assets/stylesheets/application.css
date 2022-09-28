@@ -1,7 +1,15 @@
-#header{
-      box-sizing: border-box;
-      border: 1px solid blue;
-    background-color: lightcyan;
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  height: 48px;
+  background-color: lightcyan;
+  box-sizing: border-box;
+  border: 8px solid blue;
 }
 
 #sidebar{
@@ -9,4 +17,13 @@
   background-color: moccasin;
   box-sizing: border-box;
   border: 2px solid chocolate;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: palegoldenrod;
+  box-sizing: border-box;
+  border: 8px solid green;
 }
