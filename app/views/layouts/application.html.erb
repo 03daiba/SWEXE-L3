@@ -12,13 +12,13 @@
 
   <body>
     <div id="container">
+      <div id="header">
+        <%= render "header" %>
+      </div>
       <div id = "main">
         <div id="sidebar">
           <%= render "sidebar" %>
         </div>
-      <div id="header">
-        <%= render "header" %>
-      </div>
         <div id="content">
           <%= yield %>
         </div>
