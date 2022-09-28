@@ -33,3 +33,10 @@
   flex-direction: row;
   flex-grow: 1;
 }
+
+#footer {
+  height: 48px;
+  background-color: lightcyan;
+  box-sizing: border-box;
+  border: 8px solid blue;
+}
