@@ -3,3 +3,10 @@
       border: 1px solid blue;
     background-color: lightcyan;
 }
+
+#sidebar{
+  width: 96px;
+  background-color: moccasin;
+  box-sizing: border-box;
+  border: 8px solid chocolate;
+}
