@@ -21,7 +21,7 @@ class TweetsController < ApplicationController
   def destroy
     tweet = Tweet.find(params[:id])
     tweet.destroy
-    redirect_to '/'
+    redirect_to root_path
   end
   
   def show
@@ -36,6 +36,6 @@ class TweetsController < ApplicationController
     tweet = Tweet.find(params[:id])
     
     tweet.update(message: params[:tweet][:message])
-    redirect_to '/'
+    redirect_to root_path
   end
 end
